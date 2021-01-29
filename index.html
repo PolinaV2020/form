@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+    <legend>Данные для связи</legend>
+    <p>Имя: <input type="text" name="name" size="20" value=""></p>
+    <p>Телефон: <input type="tel" name="phone_number"  size="20" value=""></p>
+    <p>Эл.почта: <input type="email" name="post" size="20" value=""></p>
+    <p>Пароль: <input type="password"></p>
+    </fieldset>
+    <fieldset>
+    <legend>Варианты оплаты</legend>
+    <input type="radio" name="program" value="payment_cash">Наличными<br>
+    <input type="radio" name="program" value="payment_card">Банковской картой<br>
+    <input type="radio" name="program" value="payment_card_online">Банковской картой онлайн<br>
+    <input type="radio" name="program" value="payment_installment_card">Картой рассрочки<br>
+    <select name="time" multiple style="height: 135px">
+      <option disabled>Выберите время доставки</option>
+      <optgroup label="Будни">
+      <option value="morning">Утро(08.00-12.00)</option>
+      <option value="day">День(12.00-18.00)</option>
+      <option value="evening">Вечер(18.00-21.00)</option>
+      </optgroup>
+      <optgroup label="Выходные">
+        <option value="weekend_saturday">Суббота(10.00-19.00)</option>
+        <option value="weekend_sunday">Воскресенье(10.00-15.00)</option>
+      </optgroup>
+    </select>
+    </fieldset>
+    <p><textarea name="comments" rows="10" cols="70" maxlength="400" placeholder="Здесь вы можете оставить свои пожелания по доставке и упаковке."></textarea></p>
+    <input type="submit" name="send" value="Отправить">
+    <input type="reset" name="reset" value="Очистить">
+  </form>
+</body>
+</html>
